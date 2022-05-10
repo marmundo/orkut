@@ -1,0 +1,31 @@
+# POST USER
+POST /app/fake_orkut-xypwu/endpoint/postUser HTTP/1.1
+Content-Type: application/json
+Host: data.mongodb-api.com
+Content-Length: 54
+
+{
+	"email":"marcelo@ifrn.edu.br",
+	"service":"Teste"
+}
+
+# GET USERS
+GET /app/fake_orkut-xypwu/endpoint/users HTTP/1.1
+Host: data.mongodb-api.com
+
+
+#GET USERS BY SERVICE
+POST /app/fake_orkut-xypwu/endpoint/getUsersByService HTTP/1.1
+Content-Type: application/json
+Host: data.mongodb-api.com
+Content-Length: 22
+
+{
+	"service":"Teste"
+}
+
+#GET USERS BY SERVICE
+GET /app/fake_orkut-xypwu/endpoint/getUsersByService?service=Casa HTTP/1.1
+Content-Type: application/json
+Host: data.mongodb-api.com
+
